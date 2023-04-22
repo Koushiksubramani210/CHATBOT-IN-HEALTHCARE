@@ -1,16 +1,19 @@
 # CHATBOT-IN-HEALTHCARE
 EXPLINED FULL CODE:
 
+
 import openai
 import gradio as gr
 import webbrowser
+
 explination:
 The openai library is imported to enable interaction with the OpenAI GPT-3 API.
 The gradio library is imported to create a simple UI for the chatbot.
 The webbrowser library is imported to enable opening links in the user's web browser.
 
 
-openai.api_key ="xxx"
+openai.api_key = "XXXX"
+
 explination:
 This line sets the OpenAI API key that is used to authenticate requests to the OpenAI API.
 
@@ -18,12 +21,14 @@ This line sets the OpenAI API key that is used to authenticate requests to the O
 
 start_sequence = "\nAI:"
 restart_sequence = "\nHuman: "
+
 explination:
 These two variables are used to separate the conversation into two parts: the AI's responses and the user's inputs. The start_sequence variable is used to mark the beginning of the AI's response, while the restart_sequence variable is used to mark the beginning of the user's input.
 
 
 
 prompt = "Welcome to our healthcare chatbot. prompt Ask a healthcare-related question or make a healthcare-related statement. This chatbot can help you with topics such as symptoms, diagnosis, treatment options, prevention, and precautions. You can also ask about booking an appointment with a doctor or specialist."
+
 explination:
 The prompt variable is a string that contains the initial message that the chatbot will display to the user. It provides guidance on what type of questions or statements the user can make and also mentions some of the healthcare-related topics that the chatbot can help with, such as symptoms, diagnosis, treatment options, prevention, precautions, and booking appointments with doctors or specialists. The prompt is designed to help users understand the scope of the chatbot's capabilities and to encourage them to engage with the chatbot by asking relevant questions or making relevant statements.
 
