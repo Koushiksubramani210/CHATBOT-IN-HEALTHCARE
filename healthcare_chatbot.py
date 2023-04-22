@@ -2,7 +2,7 @@ import openai
 import gradio as gr
 import webbrowser
 
-openai.api_key = "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"
+openai.api_key = "XXXX"
 
 start_sequence = "\nAI:"
 restart_sequence = "\nHuman: "
